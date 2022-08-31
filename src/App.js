@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./Component/Header";
 import Nav from "./Component/Nav";
 import Home from "./Article/Home"
@@ -10,6 +10,9 @@ import Food from "./Article/Food"
 import SingleBlogPage from "./Article/SingleBlogPage";
 import './Style.css'
 import Details from "./Article/Details";
+import ErrorPage from "./Component/ErrorPage";
+
+
 
 function App() {
   return (
@@ -19,17 +22,21 @@ function App() {
       <BrowserRouter>
       <Nav />
       <Routes>
+        
         <Route path="/" element = {<Home />} />
         <Route path="/bollywood" element = {<Bollywood />} />
         <Route path="/hollywood" element = {<Hollywood />} />
         <Route path="/technology" element = {<Technology />} />
         <Route path="/fitness" element = {<Fitness />} />
         <Route path="/food" element = {<Food />} />
+        <Route path="*" element = {<ErrorPage />} />
         <Route path=":category/:articleid" element = {<SingleBlogPage/>}/>
+        
+
       </Routes>
       </BrowserRouter>
       </Details>
-
+     
 
     </div>
   );
