@@ -5,7 +5,7 @@
   color:rgb(215, 210, 138);
 }
 body{
-  background-color: seagreen;
+  background-color: white;
 }
 a{
   text-decoration: none;
@@ -22,14 +22,20 @@ a{
   font-size: 25px;
   color: brown;
   background-color: white;
+  border: 2px solid seagreen;
+  font-weight: bold;
+  font-size: 30px;
   font-weight: light;
-  margin-right: 10px;
+  margin-right:-3px;
+  /* border-radius: 10px; */
   transform: rotate(-90deg);
 }
 .container__header h1{
-  display: inline-block;
+   display: inline-block;
   font-weight: bolder;
-  color: white;
+  color: seagreen;
+  background-color: white;
+  border-radius: 10px;
   font-size: 40px;
 }
 
